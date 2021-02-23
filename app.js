@@ -1,2 +1,5 @@
 const domContainer = document.querySelector("#root");
-ReactDOM.render('Hello world', domContainer);
+
+const myElement = React.createElement("div", null, "RS Shonjoy")
+
+ReactDOM.render(myElement, domContainer);
