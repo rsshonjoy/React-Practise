@@ -7,3 +7,14 @@ const myElement = React.createElement("div", null, [
 ])
 
 ReactDOM.render(myElement, domContainer);
+
+let array = [];
+increment = 0;
+let container = document.querySelector('.container');
+
+// fast method
+while (increment < 10000) {
+  array.push(++increment);
+}
+
+container.innerHTML = array.join(' ');
